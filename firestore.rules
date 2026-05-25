@@ -1,0 +1,25 @@
+// firestore.rules
+// Deploy with: firebase deploy --only firestore:rules
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Users collection ────────────────────────────────────────────────────
+    // Only the authenticated user can read/write their own document.
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // ── Postings collection ─────────────────────────────────────────────────
+    // Anyone logged in can read all postings.
+    // Only the owner (uid matches) can delete or update their posting.
+    match /postings/{postingId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null
+                    && request.resource.data.uid == request.auth.uid;
+      allow update, delete: if request.auth != null
+                            && resource.data.uid == request.auth.uid;
+    }
+  }
+}
