@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "668985329364",
+    "project_id": "labour-connect-demo",
+    "storage_bucket": "labour-connect-demo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668985329364:android:f05faa56b35a203fde5d41",
+        "android_client_info": {
+          "package_name": "com.example.labour_connect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi0m_JVtbkgwiJJxnXfOzvuX5YqPPtm8o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
