@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'helper/authenticate.dart';
-import 'helper/helperfunctions.dart';
-import 'screens/home_screen.dart';
+import 'src/helper/authenticate.dart';
+import 'src/helper/helperfunctions.dart';
+import 'src/screens/home_screen.dart';
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);
