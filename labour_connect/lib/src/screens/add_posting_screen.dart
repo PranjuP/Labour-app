@@ -347,7 +347,7 @@ class _AddPostingScreenState extends State<AddPostingScreen> {
                         label: const Text('Post to Feed'),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFF1A4A2E),
-                          onPrimary: Colors.white,
+                          foregroundColor: Colors.white,
                           padding: const EdgeInsets.symmetric(vertical: 14),
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10)),
