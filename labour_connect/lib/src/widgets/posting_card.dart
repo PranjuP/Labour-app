@@ -294,7 +294,7 @@ class _ContactButton extends StatelessWidget {
       label: Text(label, overflow: TextOverflow.ellipsis),
       style: ElevatedButton.styleFrom(
         backgroundColor: color,
-        onPrimary: textColor,
+        foregroundColor: textColor,
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 12),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
         elevation: 0,
