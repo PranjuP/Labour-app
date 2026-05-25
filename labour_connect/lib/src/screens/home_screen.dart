@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../services/auth.dart';
-import '../../helper/helperfunctions.dart';
+import '../services/auth.dart';
+import '../helper/helperfunctions.dart';
 import 'feed_screen.dart';
 import 'add_posting_screen.dart';
 import 'profile_screen.dart';

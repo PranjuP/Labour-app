@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../models/posting.dart';
-import '../../services/database.dart';
-import '../../helper/helperfunctions.dart';
+import '../models/posting.dart';
+import '../services/database.dart';
+import '../helper/helperfunctions.dart';
 
 /// Screen for creating a new posting.
 /// The user first selects whether they are a company or a labourer,

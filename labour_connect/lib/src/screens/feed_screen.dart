@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import '../../services/database.dart';
-import '../../models/posting.dart';
-import '../../widgets/posting_card.dart';
+import '../services/database.dart';
+import '../models/posting.dart';
+import '../widgets/posting_card.dart';
 
 /// The main feed screen. Shows all postings with filter tabs.
 class FeedScreen extends StatefulWidget {

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../../services/database.dart';
-import '../../services/auth.dart';
-import '../../helper/helperfunctions.dart';
-import '../../models/posting.dart';
-import '../../widgets/posting_card.dart';
+import '../services/database.dart';
+import '../services/auth.dart';
+import '../helper/helperfunctions.dart';
+import '../models/posting.dart';
+import '../widgets/posting_card.dart';
 
 /// Shows the logged-in user's profile and their own postings.
 class ProfileScreen extends StatefulWidget {
@@ -178,7 +178,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               }
                             },
                           ))
-                      .toList(),
+                      .cast<Widget>().toList(),
                 );
               },
             ),
